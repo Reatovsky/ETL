@@ -1,0 +1,3 @@
+Имя: Purrsloud, Вид: Cat, Любимая еда: wet food, dry food, any food, Год рождения: 2016, Фото: https://learnwebcode.github.io/json-example/images/cat-2.jpg
+Имя: Barksalot, Вид: Dog, Год рождения: 2008, Фото: https://learnwebcode.github.io/json-example/images/dog-1.jpg
+Имя: Meowsalot, Вид: Cat, Любимая еда: tuna, catnip, celery, Год рождения: 2012, Фото: https://learnwebcode.github.io/json-example/images/cat-1.jpg
