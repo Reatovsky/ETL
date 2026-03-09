@@ -1,0 +1,83 @@
+airflow_data> db.user_sessions.find().pretty()
+[
+  {
+    _id: ObjectId('69af09d9f748a2751e8563b1'),
+    session_id: 'sess_001',
+    user_id: 'user_123',
+    start_time: '2024-01-10T09:00:00Z',
+    end_time: '2024-01-10T09:30:00Z',
+    pages_visited: [ '/home', '/products', '/products/42', '/cart' ],
+    device: { type: 'mobile', browser: 'Chrome', os: 'iOS', ip: '192.168.1.105' },
+    actions: [ 'login', 'view_product', 'add_to_cart', 'logout' ],
+    duration_minutes: 30
+  },
+  {
+    _id: ObjectId('69af09d9f748a2751e8563b2'),
+    session_id: 'sess_002',
+    user_id: 'user_456',
+    start_time: '2024-01-10T10:15:00Z',
+    end_time: '2024-01-10T11:45:00Z',
+    pages_visited: [
+      '/home',
+      '/search',
+      '/products/23',
+      '/products/24',
+      '/cart',
+      '/checkout'
+    ],
+    device: { type: 'desktop', browser: 'Firefox', os: 'Windows', ip: '10.0.0.23' },
+    actions: [
+      'login',
+      'search',
+      'view_product',
+      'add_to_cart',
+      'checkout',
+      'logout'
+    ],
+    duration_minutes: 90
+  },
+  {
+    _id: ObjectId('69af09d9f748a2751e8563b3'),
+    session_id: 'sess_003',
+    user_id: 'user_789',
+    start_time: '2024-01-09T18:30:00Z',
+    end_time: '2024-01-09T19:15:00Z',
+    pages_visited: [ '/home', '/products', '/profile', '/orders', '/support' ],
+    device: { type: 'tablet', browser: 'Safari', os: 'iPadOS', ip: '172.16.0.45' },
+    actions: [
+      'login',
+      'view_product',
+      'view_profile',
+      'view_orders',
+      'open_support'
+    ],
+    duration_minutes: 45
+  },
+  {
+    _id: ObjectId('69af09d9f748a2751e8563b4'),
+    session_id: 'sess_004',
+    user_id: 'user_123',
+    start_time: '2024-01-11T14:20:00Z',
+    end_time: '2024-01-11T14:50:00Z',
+    pages_visited: [ '/home', '/products/42', '/cart', '/checkout', '/orders' ],
+    device: {
+      type: 'mobile',
+      browser: 'Chrome',
+      os: 'Android',
+      ip: '192.168.1.105'
+    },
+    actions: [ 'login', 'view_product', 'add_to_cart', 'checkout', 'view_orders' ],
+    duration_minutes: 30
+  },
+  {
+    _id: ObjectId('69af09d9f748a2751e8563b5'),
+    session_id: 'sess_005',
+    user_id: 'user_456',
+    start_time: '2024-01-11T08:00:00Z',
+    end_time: '2024-01-11T08:45:00Z',
+    pages_visited: [ '/home', '/search', '/products', '/products/15', '/cart' ],
+    device: { type: 'desktop', browser: 'Chrome', os: 'macOS', ip: '10.0.0.23' },
+    actions: [ 'login', 'search', 'view_product', 'add_to_cart' ],
+    duration_minutes: 45
+  }
+]

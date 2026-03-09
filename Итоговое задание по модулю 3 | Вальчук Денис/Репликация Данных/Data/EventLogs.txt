@@ -1,0 +1,61 @@
+airflow_data> db.event_logs.find().pretty()
+[
+  {
+    _id: ObjectId('69af09ebf748a2751e8563b6'),
+    event_id: 'evt_001',
+    timestamp: '2024-01-10T09:05:00Z',
+    event_type: 'page_view',
+    user_id: 'user_123',
+    session_id: 'sess_001',
+    details: { page: '/products/42', referrer: '/products', load_time_ms: 234 }
+  },
+  {
+    _id: ObjectId('69af09ebf748a2751e8563b7'),
+    event_id: 'evt_002',
+    timestamp: '2024-01-10T09:10:00Z',
+    event_type: 'add_to_cart',
+    user_id: 'user_123',
+    session_id: 'sess_001',
+    details: { product_id: 'prod_42', quantity: 1, price: 29.99 }
+  },
+  {
+    _id: ObjectId('69af09ebf748a2751e8563b8'),
+    event_id: 'evt_003',
+    timestamp: '2024-01-10T10:20:00Z',
+    event_type: 'search',
+    user_id: 'user_456',
+    session_id: 'sess_002',
+    details: {
+      query: 'wireless headphones',
+      filters: { brand: 'sony', price_range: '100-200' },
+      results_count: 15
+    }
+  },
+  {
+    _id: ObjectId('69af09ebf748a2751e8563b9'),
+    event_id: 'evt_004',
+    timestamp: '2024-01-10T11:30:00Z',
+    event_type: 'checkout_started',
+    user_id: 'user_456',
+    session_id: 'sess_002',
+    details: { cart_total: 156.75, items_count: 3, payment_method: 'credit_card' }
+  },
+  {
+    _id: ObjectId('69af09ebf748a2751e8563ba'),
+    event_id: 'evt_005',
+    timestamp: '2024-01-09T19:00:00Z',
+    event_type: 'support_request',
+    user_id: 'user_789',
+    session_id: 'sess_003',
+    details: { issue_type: 'order_status', order_id: 'ord_789', priority: 'medium' }
+  },
+  {
+    _id: ObjectId('69af09ebf748a2751e8563bb'),
+    event_id: 'evt_006',
+    timestamp: '2024-01-11T14:30:00Z',
+    event_type: 'payment_success',
+    user_id: 'user_123',
+    session_id: 'sess_004',
+    details: { order_id: 'ord_124', amount: 29.99, payment_method: 'paypal' }
+  }
+]

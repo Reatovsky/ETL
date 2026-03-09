@@ -1,0 +1,30 @@
+airflow_data> db.user_recommendations.find().pretty()
+[
+  {
+    _id: ObjectId('69af0a4bf748a2751e8563c0'),
+    user_id: 'user_123',
+    recommended_products: [ 'prod_101', 'prod_205', 'prod_333' ],
+    last_updated: '2024-01-10T08:00:00Z',
+    recommendation_type: 'personalized',
+    algorithm_version: 'v2.1',
+    score: 0.95
+  },
+  {
+    _id: ObjectId('69af0a4bf748a2751e8563c1'),
+    user_id: 'user_456',
+    recommended_products: [ 'prod_102', 'prod_208', 'prod_310', 'prod_125' ],
+    last_updated: '2024-01-10T08:00:00Z',
+    recommendation_type: 'popular',
+    algorithm_version: 'v2.1',
+    score: 0.87
+  },
+  {
+    _id: ObjectId('69af0a4bf748a2751e8563c2'),
+    user_id: 'user_789',
+    recommended_products: [ 'prod_201', 'prod_202' ],
+    last_updated: '2024-01-09T08:00:00Z',
+    recommendation_type: 'similar_users',
+    algorithm_version: 'v2.0',
+    score: 0.76
+  }
+]

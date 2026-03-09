@@ -1,0 +1,54 @@
+airflow_data> db.moderation_queue.find().pretty()
+[
+  {
+    _id: ObjectId('69af0a57f748a2751e8563c3'),
+    review_id: 'rev_555',
+    user_id: 'user_123',
+    product_id: 'prod_101',
+    review_text: 'Отличный товар, работает как нужно!',
+    rating: 5,
+    moderation_status: 'pending',
+    flags: [ 'contains_images' ],
+    submitted_at: '2024-01-08T10:20:00Z',
+    images: [ 'review_img_1.jpg' ],
+    helpful_votes: 0
+  },
+  {
+    _id: ObjectId('69af0a57f748a2751e8563c4'),
+    review_id: 'rev_556',
+    user_id: 'user_456',
+    product_id: 'prod_205',
+    review_text: 'Неплохо, но доставка задержалась',
+    rating: 4,
+    moderation_status: 'approved',
+    flags: [],
+    submitted_at: '2024-01-07T15:30:00Z',
+    approved_at: '2024-01-08T09:00:00Z',
+    helpful_votes: 3
+  },
+  {
+    _id: ObjectId('69af0a57f748a2751e8563c5'),
+    review_id: 'rev_557',
+    user_id: 'user_789',
+    product_id: 'prod_333',
+    review_text: 'Ужасное качество, разочарован',
+    rating: 1,
+    moderation_status: 'rejected',
+    flags: [ 'inappropriate_language', 'fake_review' ],
+    submitted_at: '2024-01-09T11:10:00Z',
+    rejected_at: '2024-01-09T14:20:00Z',
+    rejection_reason: 'violates_policy'
+  },
+  {
+    _id: ObjectId('69af0a57f748a2751e8563c6'),
+    review_id: 'rev_558',
+    user_id: 'user_123',
+    product_id: 'prod_205',
+    review_text: 'Отличная цена, всем советую!',
+    rating: 5,
+    moderation_status: 'pending',
+    flags: [ 'promotional' ],
+    submitted_at: '2024-01-10T18:45:00Z',
+    helpful_votes: 0
+  }
+]

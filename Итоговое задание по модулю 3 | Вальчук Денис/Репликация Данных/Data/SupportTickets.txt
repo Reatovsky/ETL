@@ -1,0 +1,95 @@
+airflow_data> db.support_tickets.find().pretty()
+[
+  {
+    _id: ObjectId('69af09ebf748a2751e8563bc'),
+    ticket_id: 'ticket_789',
+    user_id: 'user_123',
+    status: 'open',
+    issue_type: 'payment',
+    messages: [
+      {
+        sender: 'user',
+        message: 'Не могу оплатить заказ.',
+        timestamp: '2024-01-09T12:00:00Z'
+      },
+      {
+        sender: 'support',
+        message: 'Пожалуйста, уточните способ оплаты.',
+        timestamp: '2024-01-09T13:00:00Z'
+      }
+    ],
+    created_at: '2024-01-09T11:55:00Z',
+    updated_at: '2024-01-09T13:00:00Z',
+    priority: 'high',
+    category: 'financial'
+  },
+  {
+    _id: ObjectId('69af09ebf748a2751e8563bd'),
+    ticket_id: 'ticket_790',
+    user_id: 'user_456',
+    status: 'closed',
+    issue_type: 'technical',
+    messages: [
+      {
+        sender: 'user',
+        message: 'Сайт не загружается на мобильном устройстве',
+        timestamp: '2024-01-08T09:15:00Z'
+      },
+      {
+        sender: 'support',
+        message: 'Попробуйте очистить кэш браузера',
+        timestamp: '2024-01-08T10:30:00Z'
+      },
+      {
+        sender: 'user',
+        message: 'Спасибо, помогло!',
+        timestamp: '2024-01-08T10:45:00Z'
+      }
+    ],
+    created_at: '2024-01-08T09:15:00Z',
+    updated_at: '2024-01-08T10:45:00Z',
+    priority: 'medium',
+    category: 'website'
+  },
+  {
+    _id: ObjectId('69af09ebf748a2751e8563be'),
+    ticket_id: 'ticket_791',
+    user_id: 'user_789',
+    status: 'in_progress',
+    issue_type: 'delivery',
+    messages: [
+      {
+        sender: 'user',
+        message: 'Заказ не пришел вовремя',
+        timestamp: '2024-01-10T16:20:00Z'
+      },
+      {
+        sender: 'support',
+        message: 'Проверяем статус доставки',
+        timestamp: '2024-01-10T17:00:00Z'
+      }
+    ],
+    created_at: '2024-01-10T16:20:00Z',
+    updated_at: '2024-01-10T17:00:00Z',
+    priority: 'high',
+    category: 'logistics'
+  },
+  {
+    _id: ObjectId('69af09ebf748a2751e8563bf'),
+    ticket_id: 'ticket_792',
+    user_id: 'user_123',
+    status: 'open',
+    issue_type: 'product',
+    messages: [
+      {
+        sender: 'user',
+        message: 'Товар пришел с браком',
+        timestamp: '2024-01-11T10:00:00Z'
+      }
+    ],
+    created_at: '2024-01-11T10:00:00Z',
+    updated_at: '2024-01-11T10:00:00Z',
+    priority: 'medium',
+    category: 'returns'
+  }
+]
