@@ -1,0 +1,12 @@
+create table `call_data` (
+    `call_id` string not null, 
+    `call_time` timestamp not null, 
+    `client_id` string not null, 
+    `region_code` string not null, 
+    `campaign_type` string not null, 
+    `call_status` string not null, 
+    `client_response` string not null, 
+    `duration_sec` uint32 not null, 
+    `follow_up_required` bool not null,
+    primary key (`call_id`)
+);
